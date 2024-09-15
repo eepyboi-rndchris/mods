@@ -1,0 +1,10 @@
+{
+    "compatibility_version": 2,
+    "display_version": "1.1.0",
+    "display_name": "interdiction",
+    "short_description": "Interdiction Mod - Adds a phase inhibitor item for capitals and buffs defenses",
+    "logos": {
+        "large_logo": "interdiction.png",
+        "small_logo": "interdiction.png"
+    }
+}

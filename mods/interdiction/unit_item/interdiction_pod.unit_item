@@ -1,0 +1,27 @@
+{
+    "version": 0,
+    "item_type": "ship_component",
+    "hud_icon": "interdiction_pod_hud",
+	"tooltip_icon": "interdiction_pod_hud",
+    "name": "interdiction_pod_name",
+    "description": "interdiction_pod_description",
+    "build_time": 120.0,
+    "price":
+    {
+        "credits": 2500.0,
+        "metal": 500.0,
+        "crystal": 1500.0
+    },
+	"exotic_price": [
+    {
+        "exotic_type": "utility",
+        "count": 3
+    }],
+    "required_unit_tags": [
+        "capital_ship",
+        "titan"
+    ],
+    "max_count_on_unit": 1,
+    "build_group_id": "utility",
+    "ability": "interdiction_pod"
+}

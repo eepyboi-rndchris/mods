@@ -1,0 +1,66 @@
+{
+    "version": 0,
+    "target_filters": [
+    {
+        "target_filter_id": "jump_disruption_target_filter",
+        "target_filter":
+        {
+            "ownerships": [
+                "enemy",
+                "friendly"
+				],
+            "constraints": [
+            {
+                "constraint_type": "can_ever_hyperspace"
+            },
+            {
+                "constraint_type": "composite_not",
+                "constraint":
+                {
+                    "constraint_type": "has_mutation",
+                    "mutation": "phase_jump_disruption_immune"
+                }
+            }]
+        }
+    }],
+    "action_values": [
+		{
+			"action_value_id": "interdiction_pod_active_duration",
+				"action_value":
+				{
+					"values": [180.0]
+				}
+		},
+		{
+			"action_value_id": "interdiction_pod_antimatter_cost",
+				"action_value":
+				{
+					"values": [320.0]
+				}
+		},
+		{
+			"action_value_id": "interdiction_pod_cooldown_time_value",
+				"action_value":
+				{
+					"values": [360.0]
+				}
+		},
+		{
+			"action_value_id": "interdiction_pod_linear_speed_modifier_value",
+			"action_value":
+			{
+				"values": [-2.5]
+			}
+		}
+	],
+	    "buff_unit_modifiers": [
+    {
+        "buff_unit_modifier_id": "interdiction_pod_linear_speed_modifier",
+        "buff_unit_modifier":
+        {
+            "modifier_type": "max_linear_speed",
+            "value_behavior": "scalar",
+            "value_id": "interdiction_pod_linear_speed_modifier_value"
+        }
+    }]
+}

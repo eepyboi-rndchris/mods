@@ -1,0 +1,65 @@
+{
+    "version": 0,
+    "stacking_limit": "fixed_one",
+    "stacking_limit_met_behavior": "preserve_existing_buff",
+    "stacking_ownership_type": "for_all_players",
+	"make_dead_on_source_ability_released": true,
+	"active_duration": "interdiction_pod_active_duration",
+	"unit_mutations": [
+        "disable_can_hyperspace",
+        "phase_jump_disruption"
+    ],
+	"unit_modifiers": [
+	{
+		"buff_unit_modifier_id": "interdiction_pod_linear_speed_modifier"
+	}],
+    "time_actions": [
+    {
+        "execution_interval_value": "fixed_one",
+        "action_group":
+        {
+            "constraint":
+            {
+                "constraint_type": "unit_passes_unit_constraint",
+                "unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "unit_constraint":
+                {
+                    "constraint_type": "is_fully_built"
+                }
+            },
+            "actions": [
+            {
+                "action_type": "use_unit_operators_on_units_in_gravity_well_of_unit",
+                "gravity_well_origin_unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "operators": [
+                {
+                    "constraint":
+                    {
+                        "constraint_type": "unit_passes_target_filter",
+                        "unit":
+                        {
+                            "unit_type": "operand_destination"
+                        },
+                        "target_filter_id": "jump_disruption_target_filter"
+                    },
+                    "operator_type": "apply_buff",
+                    "buff": "interdiction_pod_on_target"
+                }]
+            }]
+        }
+    }],
+	"gui":
+    {
+        "hud_icon": "interdiction_pod_hud",
+        "name": "interdiction_pod_description",
+        "is_expire_time_suppressed": true,
+        "is_visible_within_unit_tooltip": true,
+        "visibility_scope": "negative"
+    }
+}
