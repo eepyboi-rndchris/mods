@@ -8,14 +8,14 @@
     "build_time": 120.0,
     "price":
     {
-        "credits": 2500.0,
+        "credits": 1000.0,
         "metal": 500.0,
-        "crystal": 1500.0
+        "crystal": 1000.0
     },
 	"exotic_price": [
     {
         "exotic_type": "utility",
-        "count": 3
+        "count": 2
     }],
     "required_unit_tags": [
         "capital_ship",

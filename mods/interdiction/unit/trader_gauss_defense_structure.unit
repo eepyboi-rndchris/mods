@@ -113,7 +113,7 @@
     {
         "release_time_after_death": 60.0,
         "can_collide_duration_after_death": 3.8,
-        "durability": 600.0,
+        "durability": 1200.0,
         "levels": [
         {
             "max_hull_points": 1200.0,
