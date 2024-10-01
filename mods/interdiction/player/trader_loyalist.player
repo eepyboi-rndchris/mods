@@ -1034,10 +1034,11 @@
     },
     "missing_ship_component_shop_build_time_scalar": 10.0,
     "ship_components": [
-		"interdiction_pod",
+        "interdiction_pod",
         "trader_missile_armor",
         "trader_capital_ship_insurance",
         "trader_salvage_kit",
+        "trader_radiation_bomb",
         "trader_flak_burst",
         "trader_reserve_squadron_hangar",
         "trader_antimatter_engine",
@@ -2857,7 +2858,7 @@
             "prerequisites": [
                 ["trader_commerce_culture"]
             ],
-            "rate": 0.05
+            "rate": 0.01
         }]
     },
     "find_npc_explore_prerequisites": [

@@ -3,6 +3,8 @@
     "name": "weapon_name.medium_laser",
     "pitch_speed": 45.0,
     "yaw_speed": 45.0,
+    "pitch_firing_tolerance": 1.0,
+    "yaw_firing_tolerance": 1.0,
     "range": 15000.0,
     "cooldown_duration": 5.0,
     "uniforms_target_filter_id": "common_weapon",
@@ -18,6 +20,7 @@
         "energy"
     ],
     "acquire_target_logic": "order_target_or_best_target_in_range",
+    "target_acquired_duration_required_to_fire": 0.5,
     "firing":
     {
         "firing_type": "projectile",
@@ -30,7 +33,7 @@
         "projectile_travel_effect": "advent_starbase_laser_weapon_projectile_travel",
         "hit_hull_effect": "advent_starbase_laser_weapon_hit_hull",
         "hit_shield_effect": "advent_starbase_laser_weapon_hit_shield",
-        "hit_shield_impact_radius_t": 1.0
+        "hit_shield_impact_radius_t": 0.25
     },
     "turret":
     {

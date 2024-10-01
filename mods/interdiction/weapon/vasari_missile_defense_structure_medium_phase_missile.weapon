@@ -25,12 +25,6 @@
         "torpedo_firing_definition":
         {
             "spawned_unit": "vasari_phase_missile_large",
-            "buff": "standard_torpedo",
-            "buff_data_source": "standard_torpedo_buff",
-            "damage_variable_id": "damage_amount",
-            "penetration_variable_id": "penetration_amount",
-            "bypass_shields_chance_variable_id": "bypass_shields_chance_amount",
-            "duration_variable_id": "duration_amount",
             "duration": 21.0,
             "bypass_shields_chance": 0.3
         }
