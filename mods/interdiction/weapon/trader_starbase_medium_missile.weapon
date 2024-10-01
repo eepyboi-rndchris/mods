@@ -4,7 +4,7 @@
     "pitch_speed": 0.0,
     "yaw_speed": 0.0,
     "range": 30000.0,
-    "cooldown_duration": 20.0,
+    "cooldown_duration": 12.0,
     "uniforms_target_filter_id": "common_weapon",
     "attack_target_type_groups": [
         "heavy_capital",
@@ -25,12 +25,6 @@
         "torpedo_firing_definition":
         {
             "spawned_unit": "trader_large_torpedo",
-            "buff": "standard_torpedo",
-            "buff_data_source": "standard_torpedo_buff",
-            "damage_variable_id": "damage_amount",
-            "penetration_variable_id": "penetration_amount",
-            "bypass_shields_chance_variable_id": "bypass_shields_chance_amount",
-            "duration_variable_id": "duration_amount",
             "duration": 25.0,
             "enable_steering_distance_as_radius_scalar": 0.0
         }
